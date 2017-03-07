@@ -17,6 +17,5 @@
     "gulpfile.js"
   ],
   "dependencies": {
-    "angular-ui-select": "^0.19.6"
   }
 }
