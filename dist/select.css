@@ -367,3 +367,161 @@ body > .ui-select-bootstrap.open {
 .ui-select-refreshing.ng-animate {
   -webkit-animation: none 0s;
 } 
+
+
+
+//UI select styling
+.ui-select-multiple.ui-select-bootstrap{
+  padding:0px !important;
+  &.open{
+    border-color: $ls-dark-blue !important;
+  }
+  .ui-select-search{
+    padding: 0px;
+    margin:0px !important;
+    height: 34px !important;
+  }
+}
+
+//ui select common for both single and multi selection
+.ui-select-wrap{
+  height:36px !important;
+  border-color:$gray-light;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+  padding: 8px 40px 8px 8px !important;
+  line-height: 20px;
+  color:$gray !important;
+  text-transform: lowercase;
+  font-size:14px;
+  background-color: transparent;
+}
+//dropdown menu choices custom styling
+.ui-select-choices{
+  margin-top:1px !important;
+  .ui-select-choices-row{
+    &.active{
+      span{
+        background-color: $ls-highlight-blue !important;
+      }
+    }
+  }
+  .ui-select-choices-row-inner{
+    color:$gray-dark !important;
+    padding: 8px 20px;
+    &:hover{
+      background-color: $ls-highlight-blue !important;
+    }
+  }
+}
+.btn-default-focus{
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+}
+
+//ui select wrapper
+.ui-select-container{
+  display: inline-block;
+  position: relative !important;
+  .ui-select-search{
+    width: 100% !important;
+    border-color:$ls-dark-blue !important;
+    &:not(.ui-select-search-hidden){
+      padding: 8px !important;
+    }
+  }
+  &.open{
+    .btn-default{
+      border-color:$ls-dark-blue !important;
+    }
+    .ui-select-match-item{
+      &.btn-default{
+        border-color: $brand-primary !important;
+      }
+    }
+  }
+  .btn-default{
+    @extend .ui-select-wrap;
+  }
+}
+
+//ui multi select wrapper
+.ui-select-multiple{
+  border-color:$gray-light;
+  border-radius: 2px;
+  display: inline-block;
+  .ui-select-search{
+    @extend .ui-select-wrap;
+  }
+  .ui-select-match{
+    position: absolute;
+    top:35px;
+    min-width: 400px;
+    margin-top:8px;
+    .close{
+      float: none;
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid #fff;
+      margin-left: 10px;
+      color: $brand-primary !important;
+      font-size: 10px !important;
+      border-radius: 50%;
+      line-height: 10px !important;
+      display: inline-block;
+      padding: 0px 2px 2px 0px;
+      vertical-align: top;
+      margin-top: 3px;
+    }
+    .ui-select-match-item{
+      padding: 0px;
+      &.btn-default{
+        background-color: #00AED4;
+        border-color: #00AED4;
+        padding: 0px !important;
+        height: auto !important;
+        border-radius: 20px !important;
+        line-height: 20px;
+        box-sizing: border-box;
+        p{
+          margin: 0px;
+          color:#fff;
+          float: left;
+        }
+      }
+    }
+  }
+}
+//ui search caret styling
+.ui-select-bootstrap .ui-select-toggle>.caret{
+  position: absolute;
+  height: 5px;
+  top: 50%;
+  right: 10px;
+  margin-top: -2px;
+  color: $ls-dark-blue;
+}
+.ui-select-bootstrap{
+  .caret{
+    &::before{
+      content: "|";
+      font-size: 35px;
+      position: relative;
+      top: -14px;
+      right: 20px;
+      font-weight: 100;
+      color: $gray-light;
+    }
+  }
+  &.open{
+    .caret{
+      &::before{
+        right: -12px;
+      }
+    }
+  }
+}
