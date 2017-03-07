@@ -1,0 +1,8 @@
+vendor
+*.iml
+.idea
+bower_components
+node_modules
+.DS_Store
+**/.DS_Store
+**/*.log

@@ -1,0 +1,22 @@
+{
+  "name": "ls-ui-select",
+  "authors": [
+    "venugopal_annamaneni <venugopal.annamaneni@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src",
+    "gulpfile.js"
+  ],
+  "dependencies": {
+    "angular-ui-select": "^0.19.6"
+  }
+}
