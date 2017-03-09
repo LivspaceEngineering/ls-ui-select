@@ -361,7 +361,9 @@ body > .ui-select-bootstrap.open {
 
 .ui-select-container {
   display: inline-block;
-  position: relative !important; }
+  position: relative !important;
+  width:200px;
+  background-color:#fff;}
   .ui-select-container .ui-select-search {
     width: 100% !important;
     border-color: #335971 !important; }
