@@ -54,7 +54,7 @@
 }
 
 //ui select wrapper
-.ui-select-container{
+.ui-select-container {
   display: inline-block;
   position: relative !important;
   width: 200px;
@@ -76,8 +76,9 @@
       }
     }
   }
-  .btn-default{
+  .btn-default {
     @extend .ui-select-wrap;
+
     &:hover {
       background-color: transparent;
     }
