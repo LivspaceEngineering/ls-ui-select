@@ -57,6 +57,8 @@
 .ui-select-container{
   display: inline-block;
   position: relative !important;
+  width: 200px;
+  background-color: #FFF;
   .ui-select-search{
     width: 100% !important;
     border-color:$ls-dark-blue !important;
@@ -76,6 +78,9 @@
   }
   .btn-default{
     @extend .ui-select-wrap;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
