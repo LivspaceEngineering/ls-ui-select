@@ -22,7 +22,7 @@ var sourceJSPaths = [
 ];
 var sourceCssPaths = [
 	basePath + 'select.css',
-	customPath + 'ui-select.css'
+	customPath + 'ui-select.scss'
 ]
 var destPaths = "dist/";
 

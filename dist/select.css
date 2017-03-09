@@ -1,15 +1,12 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.19.3 - 2016-08-17T06:16:42.140Z
+ * Version: 0.19.5 - 2016-10-24T23:13:59.551Z
  * License: MIT
  */
-
-
 /* Style when highlighting a search. */
 .ui-select-highlight {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .ui-select-offscreen {
   clip: rect(0 0 0 0) !important;
@@ -22,116 +19,105 @@
   position: absolute !important;
   outline: 0 !important;
   left: 0px !important;
-  top: 0px !important;
-}
-
+  top: 0px !important; }
 
 .ui-select-choices-row:hover {
-  background-color: #f5f5f5;
-}
+  background-color: #f5f5f5; }
 
 /* Select2 theme */
-
 /* Mark invalid Select2 */
 .ng-dirty.ng-invalid > a.select2-choice {
-    border-color: #D44950;
-}
+  border-color: #D44950; }
 
 .select2-result-single {
-  padding-left: 0;
-}
+  padding-left: 0; }
 
-.select2-locked > .select2-search-choice-close{
-  display:none;
-}
+.select2-locked > .select2-search-choice-close {
+  display: none; }
 
-.select-locked > .ui-select-match-close{
-    display:none;
-}
+.select-locked > .ui-select-match-close {
+  display: none; }
 
 body > .select2-container.open {
-  z-index: 9999; /* The z-index Select2 applies to the select2-drop */
-}
+  z-index: 9999;
+  /* The z-index Select2 applies to the select2-drop */ }
 
 /* Handle up direction Select2 */
 .ui-select-container[theme="select2"].direction-up .ui-select-match,
 .ui-select-container.select2.direction-up .ui-select-match {
-    border-radius: 4px; /* FIXME hardcoded value :-/ */
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
+  border-radius: 4px;
+  /* FIXME hardcoded value :-/ */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
 .ui-select-container[theme="select2"].direction-up .ui-select-dropdown,
 .ui-select-container.select2.direction-up .ui-select-dropdown {
-    border-radius: 4px; /* FIXME hardcoded value :-/ */
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  border-radius: 4px;
+  /* FIXME hardcoded value :-/ */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-width: 1px;
+  /* FIXME hardcoded value :-/ */
+  border-top-style: solid;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+  margin-top: -4px;
+  /* FIXME hardcoded value :-/ */ }
 
-    border-top-width: 1px;  /* FIXME hardcoded value :-/ */
-    border-top-style: solid;
-
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
-
-    margin-top: -4px; /* FIXME hardcoded value :-/ */
-}
 .ui-select-container[theme="select2"].direction-up .ui-select-dropdown .select2-search,
 .ui-select-container.select2.direction-up .ui-select-dropdown .select2-search {
-    margin-top: 4px; /* FIXME hardcoded value :-/ */
-}
+  margin-top: 4px;
+  /* FIXME hardcoded value :-/ */ }
+
 .ui-select-container[theme="select2"].direction-up.select2-dropdown-open .ui-select-match,
 .ui-select-container.select2.direction-up.select2-dropdown-open .ui-select-match {
-    border-bottom-color: #5897fb;
-}
+  border-bottom-color: #5897fb; }
 
 .ui-select-container[theme="select2"] .ui-select-dropdown .ui-select-search-hidden,
-.ui-select-container[theme="select2"] .ui-select-dropdown .ui-select-search-hidden input{
-    opacity: 0;
-    height: 0;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
-    border:0;
-}
+.ui-select-container[theme="select2"] .ui-select-dropdown .ui-select-search-hidden input {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
 
 /* Selectize theme */
-
 /* Helper class to show styles when focus */
-.selectize-input.selectize-focus{
-  border-color: #007FBB !important;
-}
+.selectize-input.selectize-focus {
+  border-color: #007FBB !important; }
 
 /* Fix input width for Selectize theme */
-.selectize-control > .selectize-input > input {
-  width: 100%;
-}
+.selectize-control.single > .selectize-input > input {
+  width: 100%; }
+
+/* Fix line break when there's at least one item selected with the Selectize theme */
+.selectize-control.multi > .selectize-input > input {
+  margin: 0 !important; }
 
 /* Fix dropdown width for Selectize theme */
 .selectize-control > .selectize-dropdown {
-  width: 100%;
-}
+  width: 100%; }
 
 /* Mark invalid Selectize */
 .ng-dirty.ng-invalid > div.selectize-input {
-    border-color: #D44950;
-}
+  border-color: #D44950; }
 
 /* Handle up direction Selectize */
 .ui-select-container[theme="selectize"].direction-up .ui-select-dropdown {
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
-    margin-top: -2px; /* FIXME hardcoded value :-/ */
-}
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
+  margin-top: -2px;
+  /* FIXME hardcoded value :-/ */ }
 
-.ui-select-container[theme="selectize"] input.ui-select-search-hidden{
-    opacity: 0;
-    height: 0;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
-    border:0;
-    width: 0;
-}
+.ui-select-container[theme="selectize"] input.ui-select-search-hidden {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 0; }
 
 /* Bootstrap theme */
-
 /* Helper class to show styles when focus */
 .btn-default-focus {
   color: #333;
@@ -140,101 +126,89 @@ body > .select2-container.open {
   text-decoration: none;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
 
 .ui-select-bootstrap .ui-select-toggle {
-  position: relative;
-}
+  position: relative; }
 
 .ui-select-bootstrap .ui-select-toggle > .caret {
   position: absolute;
   height: 10px;
   top: 50%;
   right: 10px;
-  margin-top: -2px;
-}
+  margin-top: -2px; }
 
 /* Fix Bootstrap dropdown position when inside a input-group */
 .input-group > .ui-select-bootstrap.dropdown {
   /* Instead of relative */
-  position: static;
-}
+  position: static; }
 
 .input-group > .ui-select-bootstrap > input.ui-select-search.form-control {
-  border-radius: 4px; /* FIXME hardcoded value :-/ */
+  border-radius: 4px;
+  /* FIXME hardcoded value :-/ */
   border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
+  border-bottom-right-radius: 0; }
+
 .input-group > .ui-select-bootstrap > input.ui-select-search.form-control.direction-up {
-  border-radius: 4px !important; /* FIXME hardcoded value :-/ */
+  border-radius: 4px !important;
+  /* FIXME hardcoded value :-/ */
   border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
+  border-bottom-right-radius: 0 !important; }
 
-.ui-select-bootstrap .ui-select-search-hidden{
-    opacity: 0;
-    height: 0;
-    min-height: 0;
-    padding: 0;
-    margin: 0;
-    border:0;
-}
+.ui-select-bootstrap .ui-select-search-hidden {
+  opacity: 0;
+  height: 0;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
 
-.ui-select-bootstrap > .ui-select-match > .btn{
+.ui-select-bootstrap > .ui-select-match > .btn {
   /* Instead of center because of .btn */
-  text-align: left !important;
-}
+  text-align: left !important; }
 
 .ui-select-bootstrap > .ui-select-match > .caret {
   position: absolute;
   top: 45%;
-  right: 15px;
-}
+  right: 15px; }
 
 /* See Scrollable Menu with Bootstrap 3 http://stackoverflow.com/questions/19227496 */
-.ui-select-bootstrap > .ui-select-choices ,.ui-select-bootstrap > .ui-select-no-choice {
+.ui-select-bootstrap > .ui-select-choices, .ui-select-bootstrap > .ui-select-no-choice {
   width: 100%;
   height: auto;
   max-height: 200px;
   overflow-x: hidden;
-  margin-top: -1px;
-}
+  margin-top: -1px; }
 
 body > .ui-select-bootstrap.open {
-  z-index: 1000; /* Standard Bootstrap dropdown z-index */
-}
+  z-index: 1000;
+  /* Standard Bootstrap dropdown z-index */ }
 
 .ui-select-multiple.ui-select-bootstrap {
   height: auto;
-  padding: 3px 3px 0 3px;
-}
+  padding: 3px 3px 0 3px; }
 
 .ui-select-multiple.ui-select-bootstrap input.ui-select-search {
-  background-color: transparent !important; /* To prevent double background when disabled */
+  background-color: transparent !important;
+  /* To prevent double background when disabled */
   border: none;
   outline: none;
   height: 1.666666em;
-  margin-bottom: 3px;
-}
+  margin-bottom: 3px; }
 
 .ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
   font-size: 1.6em;
-  line-height: 0.75;
-}
+  line-height: 0.75; }
 
 .ui-select-multiple.ui-select-bootstrap .ui-select-match-item {
   outline: 0;
-  margin: 0 3px 3px 0;
-}
+  margin: 0 3px 3px 0; }
 
 .ui-select-multiple .ui-select-match-item {
-  position: relative;
-}
+  position: relative; }
 
 .ui-select-multiple .ui-select-match-item.dropping .ui-select-match-close {
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .ui-select-multiple:hover .ui-select-match-item.dropping-before:before {
   content: "";
@@ -243,8 +217,7 @@ body > .ui-select-bootstrap.open {
   right: 100%;
   height: 100%;
   margin-right: 2px;
-  border-left: 1px solid #428bca;
-}
+  border-left: 1px solid #428bca; }
 
 .ui-select-multiple:hover .ui-select-match-item.dropping-after:after {
   content: "";
@@ -253,224 +226,206 @@ body > .ui-select-bootstrap.open {
   left: 100%;
   height: 100%;
   margin-left: 2px;
-  border-right: 1px solid #428bca;
-}
+  border-right: 1px solid #428bca; }
 
-.ui-select-bootstrap .ui-select-choices-row>span {
-    cursor: pointer;
-    display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: #333;
-    white-space: nowrap;
-}
+.ui-select-bootstrap .ui-select-choices-row > span {
+  cursor: pointer;
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap; }
 
-.ui-select-bootstrap .ui-select-choices-row>span:hover, .ui-select-bootstrap .ui-select-choices-row>span:focus {
-    text-decoration: none;
-    color: #262626;
-    background-color: #f5f5f5;
-}
+.ui-select-bootstrap .ui-select-choices-row > span:hover, .ui-select-bootstrap .ui-select-choices-row > span:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5; }
 
-.ui-select-bootstrap .ui-select-choices-row.active>span {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    background-color: #428bca;
-}
+.ui-select-bootstrap .ui-select-choices-row.active > span {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca; }
 
-.ui-select-bootstrap .ui-select-choices-row.disabled>span,
-.ui-select-bootstrap .ui-select-choices-row.active.disabled>span {
-    color: #777;
-    cursor: not-allowed;
-    background-color: #fff;
-}
+.ui-select-bootstrap .ui-select-choices-row.disabled > span,
+.ui-select-bootstrap .ui-select-choices-row.active.disabled > span {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff; }
 
 /* fix hide/show angular animation */
 .ui-select-match.ng-hide-add,
 .ui-select-search.ng-hide-add {
-    display: none !important;
-}
+  display: none !important; }
 
 /* Mark invalid Bootstrap */
 .ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match {
-    border-color: #D44950;
-}
+  border-color: #D44950; }
 
 /* Handle up direction Bootstrap */
 .ui-select-container[theme="bootstrap"].direction-up .ui-select-dropdown {
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25);
-}
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.25); }
 
 .ui-select-bootstrap .ui-select-match-text {
-    width: 100%;
-    padding-right: 1em;
-}
+  width: 100%;
+  padding-right: 1em; }
+
 .ui-select-bootstrap .ui-select-match-text span {
-    display: inline-block;
-    width: 100%;
-    overflow: hidden;
-}
+  display: inline-block;
+  width: 100%;
+  overflow: hidden; }
+
 .ui-select-bootstrap .ui-select-toggle > a.btn {
   position: absolute;
   height: 10px;
   right: 10px;
-  margin-top: -2px;
-}
+  margin-top: -2px; }
 
-//UI select styling
-.ui-select-multiple.ui-select-bootstrap{
-  padding:0px !important;
-  &.open{
-    border-color: $ls-dark-blue !important;
-  }
-  .ui-select-search{
+/* Spinner */
+.ui-select-refreshing {
+  position: absolute;
+  right: 0;
+  padding: 8px 27px;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+@-webkit-keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.ui-select-spin {
+  -webkit-animation: ui-select-spin 2s infinite linear;
+  animation: ui-select-spin 2s infinite linear; }
+
+.ui-select-refreshing.ng-animate {
+  -webkit-animation: none 0s; }
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+.ui-select-multiple.ui-select-bootstrap {
+  padding: 0px !important; }
+  .ui-select-multiple.ui-select-bootstrap.open {
+    border-color: #335971 !important; }
+  .ui-select-multiple.ui-select-bootstrap .ui-select-search {
     padding: 0px;
-    margin:0px !important;
-    height: 34px !important;
-  }
-}
+    margin: 0px !important;
+    height: 34px !important; }
 
-//ui select common for both single and multi selection
-.ui-select-wrap{
-  height:36px !important;
-  border-color:$gray-light;
+.ui-select-wrap, .ui-select-container .btn-default, .ui-select-multiple .ui-select-search {
+  height: 36px !important;
+  border-color: #ccc;
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
   border-radius: 2px !important;
   padding: 8px 40px 8px 8px !important;
   line-height: 20px;
-  color:$gray !important;
+  color: #999 !important;
   text-transform: lowercase;
-  font-size:14px;
-  background-color: transparent;
-}
-//dropdown menu choices custom styling
-.ui-select-choices{
-  margin-top:1px !important;
-  .ui-select-choices-row{
-    &.active{
-      span{
-        background-color: $ls-highlight-blue !important;
-      }
-    }
-  }
-  .ui-select-choices-row-inner{
-    color:$gray-dark !important;
-    padding: 8px 20px;
-    &:hover{
-      background-color: $ls-highlight-blue !important;
-    }
-  }
-}
-.btn-default-focus{
+  font-size: 14px;
+  background-color: transparent; }
+
+.ui-select-choices {
+  margin-top: 1px !important; }
+  .ui-select-choices .ui-select-choices-row.active span {
+    background-color: #EFFAFD !important; }
+  .ui-select-choices .ui-select-choices-row-inner {
+    color: #666 !important;
+    padding: 8px 20px; }
+    .ui-select-choices .ui-select-choices-row-inner:hover {
+      background-color: #EFFAFD !important; }
+
+.btn-default-focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   outline: none;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
-//ui select wrapper
-.ui-select-container{
+.ui-select-container {
   display: inline-block;
-  position: relative !important;
-  .ui-select-search{
+  position: relative !important; }
+  .ui-select-container .ui-select-search {
     width: 100% !important;
-    border-color:$ls-dark-blue !important;
-    &:not(.ui-select-search-hidden){
-      padding: 8px !important;
-    }
-  }
-  &.open{
-    .btn-default{
-      border-color:$ls-dark-blue !important;
-    }
-    .ui-select-match-item{
-      &.btn-default{
-        border-color: $brand-primary !important;
-      }
-    }
-  }
-  .btn-default{
-    @extend .ui-select-wrap;
-  }
-}
+    border-color: #335971 !important; }
+    .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
+      padding: 8px !important; }
+  .ui-select-container.open .btn-default {
+    border-color: #335971 !important; }
+  .ui-select-container.open .ui-select-match-item.btn-default {
+    border-color: #00AED4 !important; }
 
-//ui multi select wrapper
-.ui-select-multiple{
-  border-color:$gray-light;
+.ui-select-multiple {
+  border-color: #ccc;
   border-radius: 2px;
-  display: inline-block;
-  .ui-select-search{
-    @extend .ui-select-wrap;
-  }
-  .ui-select-match{
+  display: inline-block; }
+  .ui-select-multiple .ui-select-match {
     position: absolute;
-    top:35px;
+    top: 35px;
     min-width: 400px;
-    margin-top:8px;
-    .close{
+    margin-top: 8px; }
+    .ui-select-multiple .ui-select-match .close {
       float: none;
       background-color: #fff;
       opacity: 1;
       border: 1px solid #fff;
       margin-left: 10px;
-      color: $brand-primary !important;
+      color: #00AED4 !important;
       font-size: 10px !important;
       border-radius: 50%;
       line-height: 10px !important;
       display: inline-block;
       padding: 0px 2px 2px 0px;
       vertical-align: top;
-      margin-top: 3px;
-    }
-    .ui-select-match-item{
-      padding: 0px;
-      &.btn-default{
+      margin-top: 3px; }
+    .ui-select-multiple .ui-select-match .ui-select-match-item {
+      padding: 0px; }
+      .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default {
         background-color: #00AED4;
         border-color: #00AED4;
         padding: 0px !important;
         height: auto !important;
         border-radius: 20px !important;
         line-height: 20px;
-        box-sizing: border-box;
-        p{
+        box-sizing: border-box; }
+        .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default p {
           margin: 0px;
-          color:#fff;
-          float: left;
-        }
-      }
-    }
-  }
-}
-//ui search caret styling
-.ui-select-bootstrap .ui-select-toggle>.caret{
+          color: #fff;
+          float: left; }
+
+.ui-select-bootstrap .ui-select-toggle > .caret {
   position: absolute;
   height: 5px;
   top: 50%;
   right: 10px;
   margin-top: -2px;
-  color: $ls-dark-blue;
-}
-.ui-select-bootstrap{
-  .caret{
-    &::before{
-      content: "|";
-      font-size: 35px;
-      position: relative;
-      top: -14px;
-      right: 20px;
-      font-weight: 100;
-      color: $gray-light;
-    }
-  }
-  &.open{
-    .caret{
-      &::before{
-        right: -12px;
-      }
-    }
-  }
-}
+  color: #335971; }
+
+.ui-select-bootstrap .caret::before {
+  content: "|";
+  font-size: 35px;
+  position: relative;
+  top: -14px;
+  right: 20px;
+  font-weight: 100;
+  color: #ccc; }
+
+.ui-select-bootstrap.open .caret::before {
+  right: -12px; }
