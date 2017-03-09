@@ -6,6 +6,8 @@ var uglify = require('gulp-uglify');
 var cssnano = require('gulp-cssnano');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var replace = require('gulp-replace');
+var sass  = require('gulp-sass');
 
 var cssnanoOpts = {
    safe: true,
@@ -26,11 +28,13 @@ var destPaths = "dist/";
 
 gulp.task('extractJS',function(){
 	gulp.src(sourceJSPaths)
+		.pipe(replace('ui.select','ls.select'))
 		.pipe(gulp.dest(destPaths));
 })
 
 gulp.task('extractCSS',function(){
 	gulp.src(sourceCssPaths)
+		.pipe(sass())
 		.pipe(concat('select.css'))
 		.pipe(gulp.dest(destPaths))
 		.pipe(cssnano(cssnanoOpts))
