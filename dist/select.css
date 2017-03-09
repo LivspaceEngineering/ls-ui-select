@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.19.5 - 2016-10-24T23:13:59.551Z
+ * Version: 0.19.3 - 2016-08-17T06:16:42.140Z
  * License: MIT
  */
 /* Style when highlighting a search. */
@@ -87,12 +87,8 @@ body > .select2-container.open {
   border-color: #007FBB !important; }
 
 /* Fix input width for Selectize theme */
-.selectize-control.single > .selectize-input > input {
+.selectize-control > .selectize-input > input {
   width: 100%; }
-
-/* Fix line break when there's at least one item selected with the Selectize theme */
-.selectize-control.multi > .selectize-input > input {
-  margin: 0 !important; }
 
 /* Fix dropdown width for Selectize theme */
 .selectize-control > .selectize-dropdown {
@@ -283,43 +279,35 @@ body > .ui-select-bootstrap.open {
   right: 10px;
   margin-top: -2px; }
 
-/* Spinner */
-.ui-select-refreshing {
-  position: absolute;
-  right: 0;
-  padding: 8px 27px;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
-
-@-webkit-keyframes ui-select-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
-
-@keyframes ui-select-spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg); } }
-
-.ui-select-spin {
-  -webkit-animation: ui-select-spin 2s infinite linear;
-  animation: ui-select-spin 2s infinite linear; }
-
-.ui-select-refreshing.ng-animate {
-  -webkit-animation: none 0s; }
-
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+.dropdown .dropdown-toggle {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.dropdown .dropdown-menu {
+  margin: 0px;
+  max-height: 150px;
+  overflow: scroll;
+  width: 100% !important; }
+  .dropdown .dropdown-menu li a, .dropdown .dropdown-menu .ui-select-choices-row-inner {
+    padding: 8px;
+    color: #666;
+    white-space: normal !important; }
+    .dropdown .dropdown-menu li a:hover, .dropdown .dropdown-menu .ui-select-choices-row-inner:hover {
+      background-color: #EFFAFD; }
+
+.dropdown.open .caret {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.dropdown.open .btn-dropdown {
+  border-color: #335971; }
+
+/*UI select styling*/
 .ui-select-multiple.ui-select-bootstrap {
   padding: 0px !important; }
   .ui-select-multiple.ui-select-bootstrap.open {
@@ -329,6 +317,7 @@ body > .ui-select-bootstrap.open {
     margin: 0px !important;
     height: 34px !important; }
 
+/*ui select common for both single and multi selection*/
 .ui-select-wrap, .ui-select-container .btn-default, .ui-select-multiple .ui-select-search {
   height: 36px !important;
   border-color: #ccc;
@@ -339,9 +328,9 @@ body > .ui-select-bootstrap.open {
   line-height: 20px;
   color: #999 !important;
   text-transform: lowercase;
-  font-size: 14px;
-  background-color: transparent; }
+  font-size: 14px; }
 
+/*dropdown menu choices custom styling*/
 .ui-select-choices {
   margin-top: 1px !important; }
   .ui-select-choices .ui-select-choices-row.active span {
@@ -359,11 +348,12 @@ body > .ui-select-bootstrap.open {
   outline: none;
   background-color: transparent; }
 
+/*ui select wrapper*/
 .ui-select-container {
   display: inline-block;
   position: relative !important;
-  width:200px;
-  background-color:#fff;}
+  width: 200px;
+  background-color: #fff; }
   .ui-select-container .ui-select-search {
     width: 100% !important;
     border-color: #335971 !important; }
@@ -373,11 +363,15 @@ body > .ui-select-bootstrap.open {
     border-color: #335971 !important; }
   .ui-select-container.open .ui-select-match-item.btn-default {
     border-color: #00AED4 !important; }
-  
+  .ui-select-container .btn-default:hover {
+    background-color: transparent !important; }
+
+/*ui multi select wrapper*/
 .ui-select-multiple {
   border-color: #ccc;
   border-radius: 2px;
-  display: inline-block; }
+  display: inline-block;
+  background-color: white !important; }
   .ui-select-multiple .ui-select-match {
     position: absolute;
     top: 35px;
@@ -411,7 +405,12 @@ body > .ui-select-bootstrap.open {
           margin: 0px;
           color: #fff;
           float: left; }
+    .ui-select-multiple .ui-select-match .ui-select-match-text {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 18px; }
 
+/*ui search caret styling*/
 .ui-select-bootstrap .ui-select-toggle > .caret {
   position: absolute;
   height: 5px;
