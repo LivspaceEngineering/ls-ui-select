@@ -353,7 +353,11 @@ body > .ui-select-bootstrap.open {
   display: inline-block;
   position: relative !important;
   width: 200px;
+<<<<<<< HEAD
   background-color: #fff; }
+=======
+  background-color: #FFF; }
+>>>>>>> 8f2d2c0233a531f6939e5affa523e461b2106464
   .ui-select-container .ui-select-search {
     width: 100% !important;
     border-color: #335971 !important; }
@@ -364,9 +368,14 @@ body > .ui-select-bootstrap.open {
   .ui-select-container.open .ui-select-match-item.btn-default {
     border-color: #00AED4 !important; }
   .ui-select-container .btn-default:hover {
+<<<<<<< HEAD
     background-color: transparent !important; }
 
 /*ui multi select wrapper*/
+=======
+    background-color: transparent; }
+
+>>>>>>> 8f2d2c0233a531f6939e5affa523e461b2106464
 .ui-select-multiple {
   border-color: #ccc;
   border-radius: 2px;

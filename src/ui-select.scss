@@ -87,12 +87,12 @@
   background-color: transparent;
 }
 
-/*ui select wrapper*/
-.ui-select-container{
+//ui select wrapper
+.ui-select-container {
   display: inline-block;
   position: relative !important;
-  width:200px;
-  background-color:#fff;
+  width: 200px;
+  background-color: #FFF;
   .ui-select-search{
     width: 100% !important;
     border-color:$ls-dark-blue !important;
@@ -110,10 +110,10 @@
       }
     }
   }
-  .btn-default{
+  .btn-default {
     @extend .ui-select-wrap;
-    &:hover{
-      background-color: transparent !important;
+    &:hover {
+      background-color: transparent;
     }
   }
 }
