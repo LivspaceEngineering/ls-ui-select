@@ -1,5 +1,25 @@
 @import "../../../master/sass/app/variables.scss"; 
 
+input{
+  height:36px;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+  border:1px solid $gray-light;
+  padding: 8px;
+  color:$gray-dark;
+  &:focus{
+    border-color: $ls-dark-blue;
+  }
+}
+input.form-control{
+  border:1px solid $gray-light !important;
+}
+input[type='checkbox'],input[type='radio']{
+  height: auto !important;
+  margin: auto;
+}
+
 //DROPDOWN menu styling
 .dropdown{
   .dropdown-toggle{
@@ -13,7 +33,7 @@
     overflow: scroll;
     width:100% !important;
     li a,.ui-select-choices-row-inner{
-      padding: 8px;
+      padding: 8px !imporatant;
       color:$gray-dark;
       white-space: normal !important;
       &:hover{
