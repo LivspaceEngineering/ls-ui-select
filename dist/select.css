@@ -280,6 +280,24 @@ body > .ui-select-bootstrap.open {
   margin-top: -2px; }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+input {
+  height: 36px;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  border-radius: 2px !important;
+  border: 1px solid #ccc;
+  padding: 8px;
+  color: #666; }
+  input:focus {
+    border-color: #335971; }
+
+input.form-control {
+  border: 1px solid #ccc !important; }
+
+input[type='checkbox'], input[type='radio'] {
+  height: auto !important;
+  margin: auto; }
+
 .dropdown .dropdown-toggle {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -291,7 +309,7 @@ body > .ui-select-bootstrap.open {
   overflow: scroll;
   width: 100% !important; }
   .dropdown .dropdown-menu li a, .dropdown .dropdown-menu .ui-select-choices-row-inner {
-    padding: 8px;
+    padding: 8px !important;
     color: #666;
     white-space: normal !important; }
     .dropdown .dropdown-menu li a:hover, .dropdown .dropdown-menu .ui-select-choices-row-inner:hover {
@@ -348,16 +366,11 @@ body > .ui-select-bootstrap.open {
   outline: none;
   background-color: transparent; }
 
-/*ui select wrapper*/
 .ui-select-container {
   display: inline-block;
   position: relative !important;
   width: 200px;
-<<<<<<< HEAD
-  background-color: #fff; }
-=======
   background-color: #FFF; }
->>>>>>> 8f2d2c0233a531f6939e5affa523e461b2106464
   .ui-select-container .ui-select-search {
     width: 100% !important;
     border-color: #335971 !important; }
@@ -368,14 +381,9 @@ body > .ui-select-bootstrap.open {
   .ui-select-container.open .ui-select-match-item.btn-default {
     border-color: #00AED4 !important; }
   .ui-select-container .btn-default:hover {
-<<<<<<< HEAD
-    background-color: transparent !important; }
-
-/*ui multi select wrapper*/
-=======
     background-color: transparent; }
 
->>>>>>> 8f2d2c0233a531f6939e5affa523e461b2106464
+/*ui multi select wrapper*/
 .ui-select-multiple {
   border-color: #ccc;
   border-radius: 2px;
