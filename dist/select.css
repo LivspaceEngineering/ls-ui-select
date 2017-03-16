@@ -418,7 +418,7 @@ input[type='checkbox'], input[type='radio'] {
         border-radius: 20px !important;
         line-height: 20px;
         box-sizing: border-box; }
-        .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default p {
+        .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default .ls-match-choice {
           margin: 0px;
           color: #fff;
           float: left; }
