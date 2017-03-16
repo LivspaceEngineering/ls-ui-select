@@ -413,7 +413,7 @@ input[type='checkbox'], input[type='radio'] {
       .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default {
         background-color: #00AED4;
         border-color: #00AED4;
-        padding: 0px !important;
+        padding: 0px 6px !important;
         height: auto !important;
         border-radius: 20px !important;
         line-height: 20px;
