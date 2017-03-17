@@ -204,12 +204,15 @@ input[type='checkbox'],input[type='radio']{
   .caret{
     &::before{
       content: "|";
-      font-size: 35px;
+      font-size: 37px;
       position: relative;
-      top: -14px;
+      top: -15px;
       right: 20px;
       font-weight: 100;
       color: $gray-light;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
   }
   &.open{
