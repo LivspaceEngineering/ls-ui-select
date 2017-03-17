@@ -438,12 +438,15 @@ input[type='checkbox'], input[type='radio'] {
 
 .ui-select-bootstrap .caret::before {
   content: "|";
-  font-size: 35px;
+  font-size: 37px;
   position: relative;
-  top: -14px;
+  top: -15px;
   right: 20px;
   font-weight: 100;
-  color: #ccc; }
+  color: #ccc;
+  font-style: normal !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .ui-select-bootstrap.open .caret::before {
   right: -12px; }
