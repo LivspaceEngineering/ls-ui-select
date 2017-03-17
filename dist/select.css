@@ -437,6 +437,9 @@ input[type='checkbox'], input[type='radio'] {
   margin-top: -2px;
   color: #335971; }
 
+.ui-select-bootstrap .ui-select-search-hidden {
+  display: none !important; }
+
 .ui-select-bootstrap .caret::before {
   content: "|";
   font-size: 37px;

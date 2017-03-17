@@ -202,6 +202,9 @@ input[type='checkbox'],input[type='radio']{
   color: $ls-dark-blue;
 }
 .ui-select-bootstrap{
+  .ui-select-search-hidden{
+    display:none !important;
+  }
   .caret{
     &::before{
       content: "|";
