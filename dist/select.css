@@ -369,13 +369,14 @@ input[type='checkbox'], input[type='radio'] {
 .ui-select-container {
   display: inline-block;
   position: relative !important;
-  width: 200px;
+  min-width: 200px;
   background-color: #FFF; }
   .ui-select-container .ui-select-search {
     width: 100% !important;
     border-color: #335971 !important; }
     .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
-      padding: 8px !important; }
+      padding: 8px !important;
+      height: 36px !important; }
   .ui-select-container.open .btn-default {
     border-color: #335971 !important; }
   .ui-select-container.open .ui-select-match-item.btn-default {
