@@ -390,8 +390,9 @@ input[type='checkbox'], input[type='radio'] {
   border-radius: 2px;
   display: inline-block;
   background-color: white !important; }
-  .ui-select-multiple.inline-match-items + .ui-select-search {
-    width: auto !important; }
+  .ui-select-multiple.inline-match-items .ui-select-search {
+    width: auto !important;
+    min-width: 0px !important; }
   .ui-select-multiple.custom-match-items .ui-select-match {
     position: absolute;
     top: 35px;

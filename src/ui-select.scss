@@ -146,8 +146,9 @@ input[type='checkbox'],input[type='radio']{
   display: inline-block;
   background-color:$white !important;
   &.inline-match-items{
-    & + .ui-select-search{
+    .ui-select-search{
       width: auto !important;
+      min-width:0px !important;
     }
   }
   &.custom-match-items{
