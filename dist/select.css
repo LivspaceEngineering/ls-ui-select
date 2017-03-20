@@ -372,7 +372,6 @@ input[type='checkbox'], input[type='radio'] {
   min-width: 200px;
   background-color: #FFF; }
   .ui-select-container .ui-select-search {
-    width: 100% !important;
     border-color: #335971 !important; }
     .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
       padding: 8px !important;
@@ -391,7 +390,6 @@ input[type='checkbox'], input[type='radio'] {
   display: inline-block;
   background-color: white !important; }
   .ui-select-multiple.inline-match-items .ui-select-search {
-    width: auto !important;
     min-width: 0px !important; }
   .ui-select-multiple.custom-match-items .ui-select-match {
     position: absolute;
