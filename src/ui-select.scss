@@ -145,6 +145,11 @@ input[type='checkbox'],input[type='radio']{
   border-radius: 2px;
   display: inline-block;
   background-color:$white !important;
+  &.inline-match-items{
+    & + .ui-select-search{
+      width: auto !important;
+    }
+  }
   &.custom-match-items{
     .ui-select-match{
       position: absolute;
@@ -152,7 +157,7 @@ input[type='checkbox'],input[type='radio']{
       min-width: 400px;
       margin-top:8px;
       & + .ui-select-search{
-        width:auto important;
+        width: 100% !important;
       }
     }
   }
