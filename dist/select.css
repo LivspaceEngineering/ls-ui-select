@@ -390,43 +390,45 @@ input[type='checkbox'], input[type='radio'] {
   border-radius: 2px;
   display: inline-block;
   background-color: white !important; }
-  .ui-select-multiple .ui-select-match {
+  .ui-select-multiple.custom-match-items .ui-select-match {
     position: absolute;
     top: 35px;
     min-width: 400px;
     margin-top: 8px; }
-    .ui-select-multiple .ui-select-match .close {
-      float: none;
-      background-color: #fff;
-      opacity: 1;
-      border: 1px solid #fff;
-      margin-left: 10px;
-      color: #00AED4 !important;
-      font-size: 10px !important;
-      border-radius: 50%;
-      line-height: 10px !important;
-      display: inline-block;
-      padding: 0px 2px 2px 0px;
-      vertical-align: top;
-      margin-top: 3px; }
-    .ui-select-multiple .ui-select-match .ui-select-match-item {
-      padding: 0px; }
-      .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default {
-        background-color: #00AED4;
-        border-color: #00AED4;
-        padding: 0px 6px !important;
-        height: auto !important;
-        border-radius: 20px !important;
-        line-height: 20px;
-        box-sizing: border-box; }
-        .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default .ls-match-choice {
-          margin: 0px;
-          color: #fff;
-          float: left; }
-    .ui-select-multiple .ui-select-match .ui-select-match-text {
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      line-height: 18px; }
+    .ui-select-multiple.custom-match-items .ui-select-match + .ui-select-search {
+      width: auto important; }
+  .ui-select-multiple .ui-select-match .close {
+    float: none;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #fff;
+    margin-left: 10px;
+    color: #00AED4 !important;
+    font-size: 10px !important;
+    border-radius: 50%;
+    line-height: 10px !important;
+    display: inline-block;
+    padding: 0px 2px 2px 0px;
+    vertical-align: top;
+    margin-top: 3px; }
+  .ui-select-multiple .ui-select-match .ui-select-match-item {
+    padding: 0px; }
+    .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default {
+      background-color: #00AED4;
+      border-color: #00AED4;
+      padding: 0px 6px !important;
+      height: auto !important;
+      border-radius: 20px !important;
+      line-height: 20px;
+      box-sizing: border-box; }
+      .ui-select-multiple .ui-select-match .ui-select-match-item.btn-default .ls-match-choice {
+        margin: 0px;
+        color: #fff;
+        float: left; }
+  .ui-select-multiple .ui-select-match .ui-select-match-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px; }
 
 /*ui search caret styling*/
 .ui-select-bootstrap .ui-select-toggle > .caret {

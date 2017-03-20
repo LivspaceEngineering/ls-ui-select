@@ -145,14 +145,21 @@ input[type='checkbox'],input[type='radio']{
   border-radius: 2px;
   display: inline-block;
   background-color:$white !important;
+  &.custom-match-items{
+    .ui-select-match{
+      position: absolute;
+      top:35px;
+      min-width: 400px;
+      margin-top:8px;
+      & + .ui-select-search{
+        width:auto important;
+      }
+    }
+  }
   .ui-select-search{
     @extend .ui-select-wrap;
   }
   .ui-select-match{
-    position: absolute;
-    top:35px;
-    min-width: 400px;
-    margin-top:8px;
     .close{
       float: none;
       background-color: #fff;
