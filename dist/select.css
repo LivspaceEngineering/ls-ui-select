@@ -370,7 +370,7 @@ input[type='checkbox'], input[type='radio'] {
   display: inline-block;
   position: relative !important;
   min-width: 200px;
-  width: 100%;
+  width: 100% !important;
   background-color: #FFF; }
   .ui-select-container .ui-select-search {
     border-color: #335971 !important; }
