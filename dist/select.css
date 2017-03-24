@@ -370,6 +370,7 @@ input[type='checkbox'], input[type='radio'] {
   display: inline-block;
   position: relative !important;
   min-width: 200px;
+  width: 100%;
   background-color: #FFF; }
   .ui-select-container .ui-select-search {
     border-color: #335971 !important; }
@@ -445,7 +446,7 @@ input[type='checkbox'], input[type='radio'] {
 
 .ui-select-bootstrap .caret::before {
   content: "|";
-  font-size: 37px;
+  font-size: 35px;
   position: relative;
   top: -15px;
   right: 20px;
