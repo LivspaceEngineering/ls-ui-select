@@ -345,7 +345,7 @@ input[type='checkbox'], input[type='radio'] {
   padding: 8px 40px 8px 8px !important;
   line-height: 20px;
   color: #999 !important;
-  text-transform: lowercase;
+  text-transform: none !important;
   font-size: 14px; }
 
 /*dropdown menu choices custom styling*/
@@ -372,12 +372,12 @@ input[type='checkbox'], input[type='radio'] {
   min-width: 200px;
   width: 100% !important;
   background-color: #FFF; }
-  .ui-select-container .ui-select-search {
-    border-color: #335971 !important; }
-    .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
-      padding: 8px !important;
-      height: 36px !important; }
+  .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
+    padding: 8px !important;
+    height: 36px !important; }
   .ui-select-container.open .btn-default {
+    border-color: #335971 !important; }
+  .ui-select-container.open .ui-select-search {
     border-color: #335971 !important; }
   .ui-select-container.open .ui-select-match-item.btn-default {
     border-color: #00AED4 !important; }
@@ -392,13 +392,25 @@ input[type='checkbox'], input[type='radio'] {
   background-color: white !important; }
   .ui-select-multiple.inline-match-items .ui-select-search {
     min-width: 0px !important; }
-  .ui-select-multiple.custom-match-items .ui-select-match {
-    position: absolute;
-    top: 35px;
-    min-width: 400px;
-    margin-top: 8px; }
-    .ui-select-multiple.custom-match-items .ui-select-match + .ui-select-search {
-      width: 100% !important; }
+  .ui-select-multiple.custom-match-items {
+    border: 0px !important; }
+    .ui-select-multiple.custom-match-items > div {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      box-orient: vertical; }
+      .ui-select-multiple.custom-match-items > div .ui-select-match {
+        display: block;
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+        margin-top: 8px; }
+        .ui-select-multiple.custom-match-items > div .ui-select-match + .ui-select-search {
+          width: 100% !important;
+          display: block;
+          border: 1px solid #ccc; }
   .ui-select-multiple .ui-select-match .close {
     float: none;
     background-color: #fff;
