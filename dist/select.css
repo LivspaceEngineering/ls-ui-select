@@ -495,6 +495,9 @@ input[type='checkbox'], input[type='radio'] {
   margin-top: -2px;
   color: #335971; }
 
+.ui-select-bootstrap .ui-select-toggle > a.btn {
+  margin-top: -8px; }
+
 .ui-select-bootstrap .ui-select-search-hidden {
   display: none !important; }
 
