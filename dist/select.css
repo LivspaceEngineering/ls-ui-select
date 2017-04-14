@@ -1,7 +1,7 @@
 /*!
  * ui-select
  * http://github.com/angular-ui/ui-select
- * Version: 0.19.3 - 2016-08-17T06:16:42.140Z
+ * Version: 0.19.5 - 2016-10-24T23:13:59.551Z
  * License: MIT
  */
 /* Style when highlighting a search. */
@@ -87,8 +87,12 @@ body > .select2-container.open {
   border-color: #007FBB !important; }
 
 /* Fix input width for Selectize theme */
-.selectize-control > .selectize-input > input {
+.selectize-control.single > .selectize-input > input {
   width: 100%; }
+
+/* Fix line break when there's at least one item selected with the Selectize theme */
+.selectize-control.multi > .selectize-input > input {
+  margin: 0 !important; }
 
 /* Fix dropdown width for Selectize theme */
 .selectize-control > .selectize-dropdown {
@@ -279,6 +283,42 @@ body > .ui-select-bootstrap.open {
   right: 10px;
   margin-top: -2px; }
 
+/* Spinner */
+.ui-select-refreshing {
+  position: absolute;
+  right: 0;
+  padding: 8px 27px;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+@-webkit-keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes ui-select-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.ui-select-spin {
+  -webkit-animation: ui-select-spin 2s infinite linear;
+  animation: ui-select-spin 2s infinite linear; }
+
+.ui-select-refreshing.ng-animate {
+  -webkit-animation: none 0s; }
+
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 input {
   height: 36px;
@@ -371,7 +411,7 @@ input[type='checkbox'], input[type='radio'] {
   position: relative !important;
   min-width: 200px;
   width: 100% !important;
-  background-color: #FFF; }
+  background-color: transparent !important; }
   .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
     padding: 8px !important;
     height: 36px !important; }
@@ -389,7 +429,7 @@ input[type='checkbox'], input[type='radio'] {
   border-color: #ccc;
   border-radius: 2px;
   display: inline-block;
-  background-color: white !important; }
+  background-color: transparent !important; }
   .ui-select-multiple.inline-match-items .ui-select-search {
     min-width: 0px !important; }
   .ui-select-multiple.custom-match-items {
@@ -406,11 +446,13 @@ input[type='checkbox'], input[type='radio'] {
         -webkit-box-ordinal-group: 2;
         -moz-box-ordinal-group: 2;
         box-ordinal-group: 2;
-        margin-top: 8px; }
+        margin-top: 8px;
+        background: transparent; }
         .ui-select-multiple.custom-match-items > div .ui-select-match + .ui-select-search {
           width: 100% !important;
           display: block;
-          border: 1px solid #ccc; }
+          border: 1px solid #ccc;
+          background-color: white !important; }
   .ui-select-multiple .ui-select-match .close {
     float: none;
     background-color: #fff;
