@@ -110,9 +110,8 @@ input[type='checkbox'],input[type='radio']{
 //ui select wrapper
 .ui-select-container {
   display: inline-block;
-  position: relative !important;
-  min-width: 200px;
-  width:100% !important;
+  position: relative;
+  width:100%;
   background-color: transparent !important;
   .ui-select-search{
     &:not(.ui-select-search-hidden){
