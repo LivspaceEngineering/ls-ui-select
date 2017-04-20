@@ -328,16 +328,19 @@ input[type='checkbox'], input[type='radio'] {
 /*UI select styling*/
 .ui-select-multiple.ui-select-bootstrap {
   padding: 0px !important; }
+  .ui-select-multiple.ui-select-bootstrap.inline-match-items {
+    background-color: #fff !important; }
+    .ui-select-multiple.ui-select-bootstrap.inline-match-items input.ui-select-search {
+      height: 33px; }
+  .ui-select-multiple.ui-select-bootstrap.custom-match-items input.ui-select-search {
+    height: 35px; }
   .ui-select-multiple.ui-select-bootstrap.open {
     border-color: #335971 !important; }
-  .ui-select-multiple.ui-select-bootstrap .ui-select-search {
-    padding: 0px;
-    margin: 0px !important;
-    height: 34px !important; }
+  .ui-select-multiple.ui-select-bootstrap input.ui-select-search {
+    margin: 0px; }
 
 /*ui select common for both single and multi selection*/
 .ui-select-wrap, .ui-select-container .btn-default, .ui-select-multiple .ui-select-search {
-  height: 36px !important;
   border-color: #ccc;
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
@@ -371,9 +374,16 @@ input[type='checkbox'], input[type='radio'] {
   position: relative;
   width: 100%;
   background-color: transparent !important; }
+  .ui-select-container:not(.ui-select-multiple) > .ui-select-match > .form-control.ui-select-toggle:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 30px;
+    width: 1px;
+    border-left: 1px solid #ccc; }
   .ui-select-container .ui-select-search:not(.ui-select-search-hidden) {
-    padding: 8px !important;
-    height: 36px !important; }
+    padding: 8px !important; }
   .ui-select-container.open .btn-default {
     border-color: #335971 !important; }
   .ui-select-container.open .ui-select-search {
@@ -455,22 +465,13 @@ input[type='checkbox'], input[type='radio'] {
   color: #335971; }
 
 .ui-select-bootstrap .ui-select-toggle > a.btn {
-  margin-top: -8px; }
+  right: 35px;
+  top: 0;
+  padding: 0px 0px 0px 10px !important;
+  margin: 0px !important;
+  font-size: 10px;
+  height: 35px;
+  line-height: 35px; }
 
 .ui-select-bootstrap .ui-select-search-hidden {
   display: none !important; }
-
-.ui-select-bootstrap .caret::before {
-  content: "|";
-  font-size: 35px;
-  position: relative;
-  top: -15px;
-  right: 20px;
-  font-weight: 100;
-  color: #ccc;
-  font-style: normal !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.ui-select-bootstrap.open .caret::before {
-  right: -12px; }

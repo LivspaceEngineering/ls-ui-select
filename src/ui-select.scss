@@ -57,20 +57,28 @@ input[type='checkbox'],input[type='radio']{
 
 /*UI select styling*/
 .ui-select-multiple.ui-select-bootstrap{
+  &.inline-match-items{
+    background-color:#fff !important;
+    input.ui-select-search{
+      height: 33px;
+    }
+  }
+  &.custom-match-items{
+    input.ui-select-search{
+      height: 35px;
+    }
+  }
   padding:0px !important;
   &.open{
     border-color: $ls-dark-blue !important;
   }
-  .ui-select-search{
-    padding: 0px;
-    margin:0px !important;
-    height: 34px !important;
+  input.ui-select-search{
+    margin:0px;
   }
 }
 
 /*ui select common for both single and multi selection*/
 .ui-select-wrap{
-  height:36px !important;
   border-color:$gray-light;
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
@@ -109,6 +117,21 @@ input[type='checkbox'],input[type='radio']{
 
 //ui select wrapper
 .ui-select-container {
+  &:not(.ui-select-multiple){
+    &>.ui-select-match{
+      &>.form-control.ui-select-toggle{
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0px;
+            bottom:0px;
+            right: 30px;
+            width: 1px;
+            border-left: 1px solid #ccc;
+        }
+      }
+    }
+  }
   display: inline-block;
   position: relative;
   width:100%;
@@ -116,7 +139,6 @@ input[type='checkbox'],input[type='radio']{
   .ui-select-search{
     &:not(.ui-select-search-hidden){
       padding: 8px !important;
-      height:36px !important;
     }
   }
   &.open{
@@ -230,31 +252,16 @@ input[type='checkbox'],input[type='radio']{
   color: $ls-dark-blue;
 }
 .ui-select-bootstrap .ui-select-toggle > a.btn {
-  margin-top: -8px;
+    right: 35px;
+    top: 0;
+    padding: 0px 0px 0px 10px !important;
+    margin: 0px !important;
+    font-size: 10px;
+    height: 35px;
+    line-height: 35px;
 }
 .ui-select-bootstrap{
   .ui-select-search-hidden{
     display:none !important;
-  }
-  .caret{
-    &::before{
-      content: "|";
-      font-size: 35px;
-      position: relative;
-      top: -15px;
-      right: 20px;
-      font-weight: 100;
-      color: $gray-light;
-      font-style:normal !important;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-  }
-  &.open{
-    .caret{
-      &::before{
-        right: -12px;
-      }
-    }
   }
 }
