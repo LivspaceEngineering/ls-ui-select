@@ -1,4 +1,5 @@
 @import "../../../master/sass/app/variables.scss"; 
+//@import "./variables.scss";
 
 input{
   height:36px;
@@ -264,4 +265,14 @@ input[type='checkbox'],input[type='radio']{
   .ui-select-search-hidden{
     display:none !important;
   }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }

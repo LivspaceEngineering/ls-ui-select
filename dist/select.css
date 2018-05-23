@@ -280,6 +280,7 @@ body > .ui-select-bootstrap.open {
   margin-top: -2px; }
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600");
 input {
   height: 36px;
   -webkit-border-radius: 2px !important;
@@ -475,3 +476,12 @@ input[type='checkbox'], input[type='radio'] {
 
 .ui-select-bootstrap .ui-select-search-hidden {
   display: none !important; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
