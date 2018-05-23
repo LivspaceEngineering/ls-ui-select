@@ -477,11 +477,11 @@ input[type='checkbox'], input[type='radio'] {
 .ui-select-bootstrap .ui-select-search-hidden {
   display: none !important; }
 
-.ui-select-container::-webkit-scrollbar {
+.ui-select-container .ui-select-choices::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px; }
 
-.ui-select-container::-webkit-scrollbar-thumb {
+.ui-select-container .ui-select-choices::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
